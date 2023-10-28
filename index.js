@@ -12,7 +12,6 @@ app.listen(port, () => {
 
   require('dotenv').config();
 
-  // Use the environment variable in your MongoDB connection
   mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
